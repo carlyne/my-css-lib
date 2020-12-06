@@ -1,0 +1,52 @@
+.shape--angled {
+    border-radius: 0;
+}
+
+.shape--rounded {
+    border-radius: $radius-b;
+}
+
+.shape--rotate90 {
+    transform: rotate(90deg);
+}
+
+.shape--elmt-border-dotted {
+    position: absolute;
+    display: block;
+    width: 100%;
+    border-bottom-width: 4px;
+    border-bottom-style: dotted;
+    border-bottom-color: $color-dark;
+
+    &.shape--main {
+        border-bottom-color: $color-main;
+    }
+}
+
+.shape--elmt-circle {
+    &-b {
+        width: 160px;
+        height: 160px;
+        border-radius: 100%;
+    }
+
+    &-m {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+}
+
+.shape--border {
+    &-l,
+    &-l-children > * {
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-color: $color-dark;
+    }
+
+    &-grey,
+    &-grey-children > * {
+        border-color: $color-grey;
+    }
+}

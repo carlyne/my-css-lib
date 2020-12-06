@@ -1,0 +1,52 @@
+.text-- {
+
+	&upper {
+		text-transform: uppercase;
+	}
+
+	&letter-spacing {
+		letter-spacing: .05rem;
+	}
+
+	&right {
+		text-align: right;
+	}
+
+	&left {
+		text-align: left;
+	}
+
+	&center {
+		text-align: center;
+	}
+
+	&bold {
+		font-weight: bold;
+	}
+
+	&small {
+		font-size: .8rem;
+	}
+}
+
+.text- {
+	&-main {
+		color: $color-main;
+	}
+
+	&-secondary {
+		color: $color-secondary;
+	}
+
+	&-grey {
+		color: $color-grey;
+	}
+
+	&-light {
+		color: $color-light;
+	}
+
+	&-white {
+		color: $color-white;
+	}
+}

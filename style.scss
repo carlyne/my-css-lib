@@ -1,0 +1,78 @@
+/*!
+Theme Name: mda
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: mda
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+mda is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+@import './variables/_variables-loader.scss';
+@import './reset.scss';
+
+body, 
+main, 
+section, 
+article, 
+aside, 
+nav, 
+div,
+header, 
+footer,
+form,
+ul,
+li,
+figure {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+li {
+    width: auto;
+    flex-direction: row;
+}
+
+body {
+    position: relative;
+    margin: 0 auto;
+    font-family: $app-font;
+    font-size: 1rem;
+    color: $color-dark;
+    flex-wrap: wrap;
+    background-color: $color-white;
+}
+
+main {
+    max-width: $app-w;
+    height: $app-h;
+    margin: auto;
+}
+
+
+
+
+@import './composant/composant-loader.scss';
+@import './modificateur/modificateur-loader.scss';
+
+section {
+    padding: $padding-xb;
+}

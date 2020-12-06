@@ -1,0 +1,73 @@
+/* ==== ======================== */
+/* ==== Item
+/* ==== ======================== */
+
+.nav--content-link li {
+    width: auto;
+    display: flex;
+    align-items: stretch;
+    cursor: pointer;
+    transition:  box-shadow 100ms ease-in,
+        border 130ms ease-in;
+}
+
+.nav--content-link li a {
+    width: 100%;
+    display: inline-block;
+}
+
+.nav--logo-squared {
+    width: 5rem;
+    height: 5rem;
+}
+
+
+/* ==== ======================== */
+/* ==== Hover
+/* ==== ======================== */
+
+.nav--content-link li:hover {
+    border: 2px solid $color-dark;
+    transform: translateY(3px);
+
+    $box-shadow-color: $color-white;
+    box-shadow: 0px 5px 1px 1px $box-shadow-color;
+}
+
+.nav--content-link.hover-main li:hover {
+    $box-shadow-color: $color-main;
+}
+
+.nav--content-link.hover-main-lighter li:hover {
+    $box-shadow-color:$color-main-lighter;
+}
+
+.nav--content-link.hover-main-darker li:hover {
+    $box-shadow-color: $color-main-darker;
+}
+
+.nav--content-link.hover-main-pale li:hover {
+    $box-shadow-color: $color-main-pale;
+}
+
+
+
+/* ==== ======================== */
+/* ==== Responsive 
+/* ==== ======================== */
+
+@media screen and (min-width: 800px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1220px) {
+    
+}
+
+@media screen and (min-width: 1366px) {
+    
+}
